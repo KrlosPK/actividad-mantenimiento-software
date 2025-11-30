@@ -1,0 +1,52 @@
+/* Estilos principales para la página de contacto */
+:root{
+  --yellow: #FFD54A;
+  --red: #D32F2F;
+  --bg: #fff7e6;
+  --muted: #666;
+  --card-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  --max-width: 1100px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg,var(--bg),#fff);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.site-header{background:var(--red);color:#fff}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.brand{margin:0;font-size:1.25rem}
+.brand span{color:var(--yellow)}
+.nav a{color:rgba(255,255,255,0.9);text-decoration:none;margin-left:1rem}
+.nav a.active{font-weight:700;text-decoration:underline}
+
+.main{display:grid;grid-template-columns:1fr 320px;gap:1.5rem;padding:2rem 1rem}
+.card{background:#fff;padding:1.5rem;border-radius:10px;box-shadow:var(--card-shadow)}
+.lead{color:var(--muted);margin-top:0}
+
+.form-row{margin-bottom:1rem}
+.form-row label{display:block;margin-bottom:.35rem;font-weight:600}
+.form-row input,.form-row textarea{width:100%;padding:.6rem;border:1px solid #e6e6e6;border-radius:6px;font-size:0.95rem}
+.form-row textarea{resize:vertical}
+.error{color:var(--red);font-size:.85rem;display:block;height:1em;margin-top:.35rem}
+
+.form-actions{display:flex;align-items:center;gap:1rem}
+.btn{background:var(--red);color:#fff;padding:.7rem 1rem;border-radius:8px;border:0;cursor:pointer;font-weight:700}
+.btn:hover{filter:brightness(.95)}
+.status{font-size:.95rem;color:var(--muted)}
+
+.contact-info h3{margin-top:0}
+.socials a{color:var(--red);text-decoration:none}
+
+.site-footer{margin-top:2rem;padding:1rem 0;text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .main{grid-template-columns:1fr}
+  .contact-info{order:2}
+}
