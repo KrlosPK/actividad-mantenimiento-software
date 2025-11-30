@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservar Mesa</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="reserva-container">
+      <h1>Reservar una Mesa</h1>
+      <form id="reservaForm">
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input
+          type="number"
+          id="personas"
+          min="1"
+          max="20"
+          placeholder="Número de personas"
+          required
+        />
+        <input type="date" id="fecha" required />
+        <input type="time" id="hora" required />
+        <button type="submit">Reservar</button>
+      </form>
+      <div id="reservaMensaje"></div>
+    </div>
+    <script src="js/reservar.js"></script>
+  </body>
+</html>
