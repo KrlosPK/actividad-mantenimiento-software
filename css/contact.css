@@ -45,6 +45,25 @@ body{
 
 .site-footer{margin-top:2rem;padding:1rem 0;text-align:center;color:var(--muted)}
 
+/* Estilos para la sección de ubicación */
+.location-card h2 {
+  color: var(--red);
+  margin-top: 0;
+}
+.location-card .map-container {
+  border: 3px solid var(--yellow);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.location-card strong {
+  color: var(--red);
+}
+.location-card span {
+  color: var(--yellow);
+  font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width:900px){
   .main{grid-template-columns:1fr}
