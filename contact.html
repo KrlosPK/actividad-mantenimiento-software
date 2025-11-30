@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - Restaurante Sabor Tradicional</title>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="brand">Restaurante <span>Sabor Tradicional</span></h1>
+        <nav class="nav">
+          <a href="#contact" class="active">Contacto</a>
+          <a href="#info">Información</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main">
+      <section id="contact" class="card">
+        <h2>Contacta con nosotros</h2>
+        <p class="lead">¿Tienes preguntas o quieres reservar? Escríbenos y te responderemos rápido.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+            <small class="error" data-for="name"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+            <small class="error" data-for="email"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Teléfono (opcional)</label>
+            <input type="tel" id="phone" name="phone" />
+            <small class="error" data-for="phone"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Enviar mensaje</button>
+            <div id="formStatus" class="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </section>
+
+      <aside id="info" class="card contact-info">
+        <h3>Información del restaurante</h3>
+        <p><strong>Dirección:</strong> Av. Central 123, Ciudad</p>
+        <p><strong>Teléfono:</strong> <a href="tel:+34123456789">+34 123 456 789</a></p>
+        <p><strong>Horario:</strong> Lun-Dom 12:00 - 23:00</p>
+        <h4>Síguenos</h4>
+        <p class="socials">
+          <a href="#">Facebook</a> · <a href="#">Instagram</a>
+        </p>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Restaurante Sabor Tradicional</p>
+      </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
