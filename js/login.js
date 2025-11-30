@@ -13,7 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     message.style.color = '#ffd600'
     message.textContent = '¡Ingreso exitoso! Redirigiendo...'
     setTimeout(() => {
-      window.location.href = 'dashboard.html' // Cambia a la página principal si existe
+      window.location.href = 'menu.html' // Cambia a la página principal si existe
     }, 1200)
   } else {
     message.style.color = '#ff0000'
@@ -25,6 +25,6 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 window.onload = function () {
   const session = localStorage.getItem('session')
   if (session) {
-    window.location.href = 'dashboard.html' // Cambia a la página principal si existe
+    window.location.href = 'menu.html' // Cambia a la página principal si existe
   }
 }
